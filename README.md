@@ -6,4 +6,6 @@ Techniques used:
 2) Fully Homomorphic Encryption (Dependancies: TFHE (Fast Fully Homomorphic Encryption over the Torus) open source library)
 3) Secure Multi-Party Computation (Dependancies: Python's PySyft Library)
 
-Fedearated Learning implemented using TensorFlow's toolkit
+Fedearated Learning implemented using TensorFlow's toolkit.
+
+Dataset used for analysis: https://archive.ics.uci.edu/ml/datasets/adult
