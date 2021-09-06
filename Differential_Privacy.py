@@ -44,11 +44,10 @@ print("Differentially private test accuracy (epsilon=%.2f): %.2f%%" %
 # calculating and plotting accuracy for epsilon[]= np.logspace(-2, 2, 50)
 
 epsilons = np.logspace(-2, 2, 50)
-bounds = ([17, 1, 0, 0, 1], [100, 16, 100000, 4500, 100])
 accuracy = list()
 
 for epsilon in epsilons:
-  dp_clf2 = dp.GaussianNB(epsilon=epsilon, bounds=bounds)
+  dp_clf2 = dp.GaussianNB(epsilon=epsilon)
   dp_clf2.fit(X_train, y_train)
   accuracy.append(dp_clf2.score(X_test, y_test))
 
